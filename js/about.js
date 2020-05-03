@@ -6,4 +6,4 @@ function replaceText() {
   document.querySelector(".about").innerText = newHtml;
   console.log(newHtml);
 }
-setInterval(replaceText, 3000);
+setTimeout(replaceText, 3000);
