@@ -11,7 +11,7 @@ function validateForm(event) {
   const nameError = document.querySelector("#nameError");
   const nameValue = name.value;
   const trimNameValue = nameValue.trim();
-  const nameValueLength = nameValue.length;
+  const nameValueLength = trimNameValue.length;
 
   if (nameValueLength > 0) {
     nameError.style.display = "none";
@@ -24,7 +24,7 @@ function validateForm(event) {
   const answerError = document.querySelector("#answerError");
   const answerValue = answer.value;
   const trimAnswerValue = answerValue.trim();
-  const answerValueLength = answerValue.length;
+  const answerValueLength = trimAnswerValue.length;
 
   if (answerValueLength >= 10) {
     answerError.style.display = "none";
@@ -37,8 +37,6 @@ function validateForm(event) {
   const emailValue = email.value;
   const emailError = document.querySelector("#emailError");
   const invalidEmailError = document.querySelector("#invalidEmailError");
-  const trimEmailValue = emailValue.trim();
-  const emailValueLength = emailValue.length;
 
   if (validateEmail(emailValue) === true) {
     invalidEmailError.style.display = "none";
@@ -52,7 +50,7 @@ function validateForm(event) {
   const addressError = document.querySelector("#addressError");
   const addressValue = address.value;
   const trimaddressValue = addressValue.trim();
-  const addressValueLength = addressValue.length;
+  const addressValueLength = trimaddressValue.length;
 
   if (addressValueLength >= 15) {
     addressError.style.display = "none";
